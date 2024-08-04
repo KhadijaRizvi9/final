@@ -1,84 +1,96 @@
-Cosmocloud Employee HUB
-Overview
+
+# Cosmocloud Employee Hub
+
+
+
+## Overview
+
 This project is an Employee Management System built using ReactJS for the frontend and Cosmocloud with MongoDB for the backend. It allows users to manage employee records, including adding, updating, deleting, and viewing detailed information about employees.
+## Features
 
-Features
-Employee Listing: View a list of employees with basic information.
-Add Employee: Add new employees with details like name, ID, address, and contact information.
-Edit Employee: Update existing employee information.
-Delete Employee: Remove employees from the system.
-Employee Details: View detailed information about a specific employee.
-Prerequisites
-Node.js: Ensure you have Node.js installed. You can download it from nodejs.org.
-npm or yarn: npm comes bundled with Node.js. Alternatively, you can use Yarn, which you can install from yarnpkg.com.
-Setup
-1. Clone the Repository
-bash
-Copy code
-git clone https://github.com/your-username/employee-management-system.git
-cd employee-management-system
-2. Install Dependencies
-Navigate to the root directory of the project and install the required dependencies:
+- Employee Listing: View a list of employees with basic information.
+- Add Employee: Add new employees with details like name, ID, address, and contact information.
+- Delete Employee: Remove employees from the system.
+- Employee Details: View detailed information about a specific employee.
 
-bash
-Copy code
-npm install
-or
 
-bash
-Copy code
-yarn install
-3. Configure the Backend
-API Endpoint: Ensure the API endpoint in apiService.js matches your backend setup.
-Headers: Configure any necessary headers in the apiService.js file.
-4. Start the Development Server
-Run the following command to start the React development server:
 
-bash
-Copy code
-npm start
-or
+## Tech Stack
 
-bash
-Copy code
-yarn start
-This will start the development server at http://localhost:3000 (or another port if specified).
+**Frontend:** 
+- React.js for building the user interface.
+- React Hooks (useState, useEffect) for state management and side effects.
+- Styled Components or CSS for styling.
 
-Running the Project
-Once the development server is running, you can access the application in your web browser at http://localhost:3000.
 
-Additional Commands
-Build for Production: To create a production build of the application, run:
+**Backend:** 
+- Cosmocloud API for managing employee data.
+- RESTful API endpoints for CRUD operations.
 
-bash
-Copy code
-npm run build
-or
+**Additional Tools:**
+- SweetAlert2 for user confirmation dialogs and notifications.
+## Getting Started
 
-bash
-Copy code
-yarn build
-Linting: To check for code style issues, you can run:
+To run the application locally:
 
-bash
-Copy code
-npm run lint
-or
+```bash
+  git clone <repository-url>
+  cd <project-directory>
 
-bash
-Copy code
-yarn lint
-Troubleshooting
-Error Fetching Data: If you encounter issues with fetching data, ensure that your backend service is running and accessible. Check the network tab in your browser's developer tools for more information.
+```
 
-Component Not Rendering: Ensure that the props and states are being correctly passed and updated. Use console.log to debug the values being passed to components.
+Go to the project directory
 
-Contributing
-Contributions are welcome! Please open an issue or submit a pull request with your changes.
+```bash
+  cd my-project
+```
 
-For detailed guidelines, refer to CONTRIBUTING.md.
+Install dependencies
 
-License
-This project is licensed under the MIT License. See the LICENSE file for details.
+```bash
+  npm install
+```
 
-Feel free to adjust the URLs, file paths, and any project-specific details as needed!
+Start the server
+
+```bash
+  npm run start
+```
+
+Open the Application:
+
+- Navigate to http://localhost:3000 in your web browser to view the application.
+## API Endpoints
+
+#### Get All Employees
+
+```http
+  https://free-ap-south-1.cosmocloud.io/development/api/employees
+```
+
+
+
+#### Get Employee by ID
+
+```http
+  GET https://free-ap-south-1.cosmocloud.io/development/api/employees/{id}
+```
+
+
+#### Add New Employee
+
+```http
+ POST https://free-ap-south-1.cosmocloud.io/development/api/employees
+```
+
+### Delete Employee:
+
+
+```http
+DELETE https://free-ap-south-1.cosmocloud.io/development/api/employees/{id}
+```
+## Notes
+
+- Ensure that the API service used for data storage is properly configured and accessible.
+- The application is designed to be user-friendly and intuitive for managing employee records.
+**Cosmocloud:** Refer https://docs.cosmocloud.io/
