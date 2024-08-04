@@ -62,25 +62,25 @@ Open the Application:
 - Navigate to http://localhost:3000 in your web browser to view the application.
 ## API Endpoints
 
-### Get All Employees
+#### Get All Employees
 
 ```http
-  https://free-ap-south-1.cosmocloud.io/development/api/employees
+GET https://free-ap-south-1.cosmocloud.io/development/api/employees
 ```
 
 
 
-### Get Employee by ID
+#### Get Employee by ID
 
 ```http
-  GET https://free-ap-south-1.cosmocloud.io/development/api/employees/{id}
+GET https://free-ap-south-1.cosmocloud.io/development/api/employees/{id}
 ```
 
 
-### Add New Employee
+#### Add New Employee
 
 ```http
- POST https://free-ap-south-1.cosmocloud.io/development/api/employees
+POST https://free-ap-south-1.cosmocloud.io/development/api/employees
 ```
 
 ### Delete Employee:
